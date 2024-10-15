@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modernismo Brasileiro</title>
+    <!-- Importando metatags do arquivo metadata.html -->
+    <link rel="import" href="metadata.html">
+    <!-- Importando CSS do arquivo style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="rgb.css">
+    <!-- Importando o arquivo de metatags JavaScript -->
+    <script src="metatags.js" defer></script>
+
+    <style>        
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 200vh; /* Para permitir rolagem */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0; /* Inicialmente invisível */
+            transform: translateY(20px); /* Deslocado para baixo */
+            transition: opacity 1s ease, transform 1s ease; /* Animação de transição */
+        }
+
+        .visible {
+            opacity: 1; /* Totalmente visível */
+            transform: translateY(0); /* Retorna à posição original */
+        }
+  
+        /* Estilo para o corpo do site */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #222; /* Alterando para cinza escuro */
+            color: white; /* Cor do texto alterada para branco */
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            position: relative; /* Para posicionar o botão de créditos */
+        }
+
+        /* Estilo para o contêiner de poesias */
+        #poesias-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999; /* Garante que fique sobreposto a tudo */
+            background-color: #333; /* Cor de fundo */
+            color: white; /* Cor do texto alterada para branco */
+            overflow: auto; /* Permite rolagem se o conteúdo for grande */
+        }
+
+        /* Estilo para o botão flutuante de créditos */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /* Mudado para o canto inferior esquerdo */
+            background-color: #444;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        /* Estilo para o contêiner de créditos */
+        #credits {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0; /* Adicionado para garantir que se expanda até a direita */
+            max-height: 300px; /* Limita a altura para responsividade */
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            display: none;
+            z-index: 9999;
+            overflow-y: auto; /* Permite rolagem vertical dentro do contêiner de créditos */
+        }
+
+        /* Estilo para o botão de fechar créditos */
+        .close-button {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="poesias-container"></div>
+
+    <div class="floating-button" onclick="toggleCredits()">Créditos</div>
+
+    <footer id="credits">
+        <div class="close-button" onclick="toggleCredits()">X</div>
+        <h2>Criador:</h2>
+        <p>Roger Bastos</p>
+        <p><a href="https://instagram.com/roger_19y?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a></p>
+        <p><a href="https://www.tumblr.com/rogerbastos?source=share" target="_blank">Minhas Poesias</a></p>
+        <h2>Apoiadora:</h2>
+        <p>Juliana Garcia</p>
+        <p><a href="https://www.instagram.com/professorajulianagarcia?igsh=MWJlend2am4wYnl3cA==" target="_blank">Instagram</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('scroll', () => {
+    const title = document.querySelector('.title');
+    const titlePosition = title.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Ativar a animação quando o título estiver visível
+    if (titlePosition < windowHeight) {
+        title.classList.add('visible');
+    }
+});
+
+        function loadPoesias() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'poesias.html', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('poesias-container').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+
+        window.onload = loadPoesias;
+
+        function vibrateDevice() {
+            if (navigator.vibrate) {
+                navigator.vibrate(50); // Vibração leve de 50ms
+            }
+        }
+
+        function toggleCredits() {
+            var credits = document.getElementById("credits");
+            if (credits.style.display === "none") {
+                credits.style.display = "block";
+            } else {
+                credits.style.display = "none";
+            }
+            vibrateDevice();
+        }
+        
+        // Função para vibrar o dispositivo levemente
+    function vibrateDevice() {
+        if (navigator.vibrate) {
+            navigator.vibrate(50); // Vibração leve de 50ms
+        }
+    }
+    
+    </script>
+</body>
+
+</html>

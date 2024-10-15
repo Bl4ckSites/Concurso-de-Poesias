@@ -1,0 +1,277 @@
+/* Estilo para os contêineres das poesias */
+section {
+    background-color: black; /* Cor de fundo dos contêineres */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largura dos contêineres */
+    max-width: 800px; /* Largura máxima dos contêineres */
+    transition: border-color 300s ease-in-out, color 300s ease-in-out; /* Transições suaves */
+    color: white; /* Cor do texto */
+}
+/* Animação para alternar a cor da borda */
+@keyframes borderAnimation {
+    0% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    1.25% {
+        border-color: #ff4c00; /* Transição para Laranja */
+    }
+    2.5% {
+        border-color: #ff9900; /* Transição para Laranja Claro */
+    }
+    3.75% {
+        border-color: #ffd500; /* Transição para Amarelo */
+    }
+    5% {
+        border-color: #d5ff00; /* Transição para Verde Amarelado */
+    }
+    6.25% {
+        border-color: #8aff00; /* Transição para Verde Claro */
+    }
+    7.5% {
+        border-color: #3dff00; /* Transição para Verde Claro */
+    }
+    8.75% {
+        border-color: #00ff1a; /* Transição para Verde */
+    }
+    10% {
+        border-color: #00ff66; /* Transição para Verde Claro */
+    }
+    11.25% {
+        border-color: #00ffcc; /* Transição para Verde Claro */
+    }
+    12.5% {
+        border-color: #00e6ff; /* Transição para Verde Claro */
+    }
+    13.75% {
+        border-color: #00aaff; /* Transição para Ciano */
+    }
+    15% {
+        border-color: #0073ff; /* Transição para Ciano Azulado */
+    }
+    16.25% {
+        border-color: #003cff; /* Transição para Azul Claro */
+    }
+    17.5% {
+        border-color: #0000ff; /* Azul */
+    }
+    18.75% {
+        border-color: #3c00ff; /* Transição para Azul Claro */
+    }
+    20% {
+        border-color: #7f00ff; /* Transição para Azul Claro */
+    }
+    21.25% {
+        border-color: #bf00ff; /* Transição para Roxo Claro */
+    }
+    22.5% {
+        border-color: #ff00ff; /* Magenta */
+    }
+    23.75% {
+        border-color: #ff00bf; /* Transição para Magenta */
+    }
+    25% {
+        border-color: #ff0080; /* Transição para Magenta */
+    }
+    26.25% {
+        border-color: #ff0040; /* Transição para Magenta */
+    }
+    27.5% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    28.75% {
+        border-color: #ff4c00; /* Transição para Laranja */
+    }
+    30% {
+        border-color: #ff9900; /* Laranja Claro */
+    }
+    31.25% {
+        border-color: #ffd500; /* Amarelo */
+    }
+    32.5% {
+        border-color: #d5ff00; /* Verde Amarelado */
+    }
+    33.75% {
+        border-color: #8aff00; /* Verde Claro */
+    }
+    35% {
+        border-color: #3dff00; /* Verde Claro */
+    }
+    36.25% {
+        border-color: #00ff1a; /* Verde */
+    }
+    37.5% {
+        border-color: #00ff66; /* Verde Claro */
+    }
+    38.75% {
+        border-color: #00ffcc; /* Verde Claro */
+    }
+    40% {
+        border-color: #00e6ff; /* Verde Claro */
+    }
+    41.25% {
+        border-color: #00aaff; /* Ciano */
+    }
+    42.5% {
+        border-color: #0073ff; /* Ciano Azulado */
+    }
+    43.75% {
+        border-color: #003cff; /* Azul Claro */
+    }
+    45% {
+        border-color: #0000ff; /* Azul */
+    }
+    46.25% {
+        border-color: #3c00ff; /* Azul Claro */
+    }
+    47.5% {
+        border-color: #7f00ff; /* Azul Claro */
+    }
+    48.75% {
+        border-color: #bf00ff; /* Roxo Claro */
+    }
+    50% {
+        border-color: #ff00ff; /* Magenta */
+    }
+    51.25% {
+        border-color: #ff00bf; /* Magenta */
+    }
+    52.5% {
+        border-color: #ff0080; /* Magenta */
+    }
+    53.75% {
+        border-color: #ff0040; /* Magenta */
+    }
+    55% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    56.25% {
+        border-color: #ff4c00; /* Laranja */
+    }
+    57.5% {
+        border-color: #ff9900; /* Laranja Claro */
+    }
+    58.75% {
+        border-color: #ffd500; /* Amarelo */
+    }
+    60% {
+        border-color: #d5ff00; /* Verde Amarelado */
+    }
+    61.25% {
+        border-color: #8aff00; /* Verde Claro */
+    }
+    62.5% {
+        border-color: #3dff00; /* Verde Claro */
+    }
+    63.75% {
+        border-color: #00ff1a; /* Verde */
+    }
+    65% {
+        border-color: #00ff66; /* Verde Claro */
+    }
+    66.25% {
+        border-color: #00ffcc; /* Verde Claro */
+    }
+    67.5% {
+        border-color: #00e6ff; /* Verde Claro */
+    }
+    68.75% {
+        border-color: #00aaff; /* Ciano */
+    }
+    70% {
+        border-color: #0073ff; /* Ciano Azulado */
+    }
+    71.25% {
+        border-color: #003cff; /* Azul Claro */
+    }
+    72.5% {
+        border-color: #0000ff; /* Azul */
+    }
+    73.75% {
+        border-color: #3c00ff; /* Azul Claro */
+    }
+    75% {
+        border-color: #7f00ff; /* Azul Claro */
+    }
+    76.25% {
+        border-color: #bf00ff; /* Roxo Claro */
+    }
+    77.5% {
+        border-color: #ff00ff; /* Magenta */
+    }
+    78.75% {
+    border-color: #ff00bf; /* Magenta */
+    }
+    80% {
+        border-color: #ff0080; /* Magenta */
+    }
+    81.25% {
+        border-color: #ff0040; /* Magenta */
+    }
+    82.5% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    83.75% {
+        border-color: #ff4c00; /* Laranja */
+    }
+    85% {
+        border-color: #ff9900; /* Laranja Claro */
+    }
+    86.25% {
+        border-color: #ffd500; /* Amarelo */
+    }
+    87.5% {
+        border-color: #d5ff00; /* Verde Amarelado */
+    }
+    88.75% {
+        border-color: #8aff00; /* Verde Claro */
+    }
+    90% {
+        border-color: #3dff00; /* Verde Claro */
+    }
+    91.25% {
+        border-color: #00ff1a; /* Verde */
+    }
+    92.5% {
+        border-color: #00ff66; /* Verde Claro */
+    }
+    93.75% {
+        border-color: #00ffcc; /* Verde Claro */
+    }
+    95% {
+        border-color: #00e6ff; /* Verde Claro */
+    }
+    96.25% {
+        border-color: #00aaff; /* Ciano */
+    }
+    97.5% {
+        border-color: #0073ff; /* Ciano Azulado */
+    }
+    98.75% {
+        border-color: #003cff; /* Azul Claro */
+    }
+    100% {
+        border-color: #0000ff; /* Azul */
+    }
+}
+
+/* Aplicando a animação à borda dos contêineres de poesias */
+section {
+    animation: borderAnimation 900s infinite linear; /* Adiciona a animação das bordas */
+}
+
+/* Estilo para os contêineres das poesias */
+section {
+    background-color: black; /* Cor de fundo dos contêineres */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largura dos contêineres */
+    max-width: 800px; /* Largura máxima dos contêineres */
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transições suaves */
+    color: white; /* Cor do texto */
+}
+

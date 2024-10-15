@@ -1,0 +1,467 @@
+/* Estilo para o corpo do site */
+body {
+    background-color: #222; /* Fundo cinza escuro */
+    color: #fff; /* Texto branco */
+    font-family: 'Roboto', Arial, sans-serif; /* Fonte padrão com fallbacks */
+    animation: fadeIn 1s ease-in-out; /* Animação de surgimento */
+}
+
+/* Estilo para os contêineres das poesias */
+section {
+    background-color: #000; /* Cor de fundo preta */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior entre os contêineres */
+    border: 1px solid transparent; /* Borda inicial transparente */
+    animation: slideIn 1s ease-in-out; /* Animação de surgimento */
+}
+
+/* Estilo para os títulos das poesias */
+section h2 {
+    margin-top: 0; /* Remover margem superior do título */
+    color: #fff; /* Cor do texto branca */
+    font-family: 'Open Sans', Arial, sans-serif; /* Fonte para os títulos */
+}
+
+/* Estilo para o texto das poesias */
+section p {
+    margin-bottom: 10px; /* Espaçamento inferior do texto */
+    font-family: 'Lora', Arial, sans-serif; /* Fonte para o texto */
+}
+
+/* Estilo para os créditos no rodapé */
+footer {
+    margin-top: 40px; /* Espaçamento superior */
+    animation: fadeIn 2s ease-in-out; /* Animação de surgimento */
+}
+
+/* Animação de surgimento */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animação de surgimento */
+@keyframes slideIn {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+/* Definindo diferentes fontes de letras */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif; /* Fonte para títulos */
+}
+
+p {
+    font-family: 'Verdana', Geneva, sans-serif; /* Fonte para parágrafos */
+}
+
+/* Forçando todas as letras a ficarem brancas */
+body {
+    color: white;
+}
+
+/* Definindo o fundo como cinza escuro */
+body {
+    background-color: #222;
+}
+
+/* Animação para o cabeçalho */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Aplicando a animação ao cabeçalho */
+header {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animação para os títulos */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando a animação aos títulos */
+h1, h2, h3, h4, h5, h6 {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Animação para os parágrafos */
+@keyframes growIn {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 1.2em;
+    }
+}
+
+/* Aplicando a animação aos parágrafos */
+p {
+    animation: growIn 1s ease-out;
+}
+/* Estilo para o corpo do site */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Cor de fundo do site */
+    color: white; /* Cor do texto */
+}
+/* Estilo para os contêineres das poesias */
+section {
+    color: white; /* Cor do texto */
+}
+/* Estilo para os contêineres das poesias */
+section {
+    background-color: black; /* Cor de fundo dos contêineres */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Largura dos contêineres */
+    max-width: 800px; /* Largura máxima dos contêineres */
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transições suaves */
+    color: white; /* Cor do texto */
+}
+
+/* Animação para alternar a cor da borda */
+@keyframes borderAnimation {
+    0% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    1.25% {
+        border-color: #ff4c00; /* Transição para Laranja */
+    }
+    2.5% {
+        border-color: #ff9900; /* Transição para Laranja Claro */
+    }
+    3.75% {
+        border-color: #ffd500; /* Transição para Amarelo */
+    }
+    5% {
+        border-color: #d5ff00; /* Transição para Verde Amarelado */
+    }
+    6.25% {
+        border-color: #8aff00; /* Transição para Verde Claro */
+    }
+    7.5% {
+        border-color: #3dff00; /* Transição para Verde Claro */
+    }
+    8.75% {
+        border-color: #00ff1a; /* Transição para Verde */
+    }
+    10% {
+        border-color: #00ff66; /* Transição para Verde Claro */
+    }
+    11.25% {
+        border-color: #00ffcc; /* Transição para Verde Claro */
+    }
+    12.5% {
+        border-color: #00e6ff; /* Transição para Verde Claro */
+    }
+    13.75% {
+        border-color: #00aaff; /* Transição para Ciano */
+    }
+    15% {
+        border-color: #0073ff; /* Transição para Ciano Azulado */
+    }
+    16.25% {
+        border-color: #003cff; /* Transição para Azul Claro */
+    }
+    17.5% {
+        border-color: #0000ff; /* Azul */
+    }
+    18.75% {
+        border-color: #3c00ff; /* Transição para Azul Claro */
+    }
+    20% {
+        border-color: #7f00ff; /* Transição para Azul Claro */
+    }
+    21.25% {
+        border-color: #bf00ff; /* Transição para Roxo Claro */
+    }
+    22.5% {
+        border-color: #ff00ff; /* Magenta */
+    }
+    23.75% {
+        border-color: #ff00bf; /* Transição para Magenta */
+    }
+    25% {
+        border-color: #ff0080; /* Transição para Magenta */
+    }
+    26.25% {
+        border-color: #ff0040; /* Transição para Magenta */
+    }
+    27.5% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    28.75% {
+        border-color: #ff4c00; /* Transição para Laranja */
+    }
+    30% {
+        border-color: #ff9900; /* Laranja Claro */
+    }
+    31.25% {
+        border-color: #ffd500; /* Amarelo */
+    }
+    32.5% {
+        border-color: #d5ff00; /* Verde Amarelado */
+    }
+    33.75% {
+        border-color: #8aff00; /* Verde Claro */
+    }
+    35% {
+        border-color: #3dff00; /* Verde Claro */
+    }
+    36.25% {
+        border-color: #00ff1a; /* Verde */
+    }
+    37.5% {
+        border-color: #00ff66; /* Verde Claro */
+    }
+    38.75% {
+        border-color: #00ffcc; /* Verde Claro */
+    }
+    40% {
+        border-color: #00e6ff; /* Verde Claro */
+    }
+    41.25% {
+        border-color: #00aaff; /* Ciano */
+    }
+    42.5% {
+        border-color: #0073ff; /* Ciano Azulado */
+    }
+    43.75% {
+        border-color: #003cff; /* Azul Claro */
+    }
+    45% {
+        border-color: #0000ff; /* Azul */
+    }
+    46.25% {
+        border-color: #3c00ff; /* Azul Claro */
+    }
+    47.5% {
+        border-color: #7f00ff; /* Azul Claro */
+    }
+    48.75% {
+        border-color: #bf00ff; /* Roxo Claro */
+    }
+    50% {
+        border-color: #ff00ff; /* Magenta */
+    }
+    51.25% {
+        border-color: #ff00bf; /* Magenta */
+    }
+    52.5% {
+        border-color: #ff0080; /* Magenta */
+    }
+    53.75% {
+        border-color: #ff0040; /* Magenta */
+    }
+    55% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    56.25% {
+        border-color: #ff4c00; /* Laranja */
+    }
+    57.5% {
+        border-color: #ff9900; /* Laranja Claro */
+    }
+    58.75% {
+        border-color: #ffd500; /* Amarelo */
+    }
+    60% {
+        border-color: #d5ff00; /* Verde Amarelado */
+    }
+    61.25% {
+        border-color: #8aff00; /* Verde Claro */
+    }
+    62.5% {
+        border-color: #3dff00; /* Verde Claro */
+    }
+    63.75% {
+        border-color: #00ff1a; /* Verde */
+    }
+    65% {
+        border-color: #00ff66; /* Verde Claro */
+    }
+    66.25% {
+        border-color: #00ffcc; /* Verde Claro */
+    }
+    67.5% {
+        border-color: #00e6ff; /* Verde Claro */
+    }
+    68.75% {
+        border-color: #00aaff; /* Ciano */
+    }
+    70% {
+        border-color: #0073ff; /* Ciano Azulado */
+    }
+    71.25% {
+        border-color: #003cff; /* Azul Claro */
+    }
+    72.5% {
+        border-color: #0000ff; /* Azul */
+    }
+    73.75% {
+        border-color: #3c00ff; /* Azul Claro */
+    }
+    75% {
+        border-color: #7f00ff; /* Azul Claro */
+    }
+    76.25% {
+        border-color: #bf00ff; /* Roxo Claro */
+    }
+    77.5% {
+        border-color: #ff00ff; /* Magenta */
+    }
+    78.75% {
+    border-color: #ff00bf; /* Magenta */
+    }
+    80% {
+        border-color: #ff0080; /* Magenta */
+    }
+    81.25% {
+        border-color: #ff0040; /* Magenta */
+    }
+    82.5% {
+        border-color: #ff0000; /* Vermelho */
+    }
+    83.75% {
+        border-color: #ff4c00; /* Laranja */
+    }
+    85% {
+        border-color: #ff9900; /* Laranja Claro */
+    }
+    86.25% {
+        border-color: #ffd500; /* Amarelo */
+    }
+    87.5% {
+        border-color: #d5ff00; /* Verde Amarelado */
+    }
+    88.75% {
+        border-color: #8aff00; /* Verde Claro */
+    }
+    90% {
+        border-color: #3dff00; /* Verde Claro */
+    }
+    91.25% {
+        border-color: #00ff1a; /* Verde */
+    }
+    92.5% {
+        border-color: #00ff66; /* Verde Claro */
+    }
+    93.75% {
+        border-color: #00ffcc; /* Verde Claro */
+    }
+    95% {
+        border-color: #00e6ff; /* Verde Claro */
+    }
+    96.25% {
+        border-color: #00aaff; /* Ciano */
+    }
+    97.5% {
+        border-color: #0073ff; /* Ciano Azulado */
+    }
+    98.75% {
+        border-color: #003cff; /* Azul Claro */
+    }
+    100% {
+        border-color: #0000ff; /* Azul */
+    }
+
+}
+
+/* Aplicando a animação à borda dos contêineres de poesias */
+section {
+    animation: borderAnimation 90s infinite linear; /* Adiciona a animação das bordas */
+}
+/* Estilo para o título das poesias */
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Fonte para os títulos */
+}
+
+/* Estilo para o texto das poesias */
+p.poetry-text {
+    font-family: 'Open Sans', sans-serif; /* Fonte para o texto das poesias */
+}
+
+/* Estilo para o nome do autor */
+p.author-name {
+    font-family: 'Roboto', sans-serif; /* Fonte para o nome do autor */
+}
+.divider-line {
+    border-bottom: 1px solid #666; /* Linha horizontal fina */
+    margin-bottom: 10px; /* Espaçamento entre a linha e o texto do autor */
+}
+a {
+    color: #0099cc; /* Azul clarinho */
+    text-decoration: none; /* Remover sublinhado padrão */
+}
+
+a:hover {
+    color: #0077aa; /* Alterar cor ao passar o mouse */
+}
+/* Faz os contêineres serem flexíveis */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Ajuste esse valor conforme o design */
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Faz as imagens serem responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Garante que o texto também se ajuste bem em telas pequenas */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+@media only screen and (max-width: 600px) {
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 200vh; /* Para permitir rolagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Deslocado para baixo */
+    transition: opacity 1s ease, transform 1s ease; /* Animação de transição */
+}
+
+.visible {
+    opacity: 1; /* Totalmente visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+}
