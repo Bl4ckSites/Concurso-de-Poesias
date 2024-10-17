@@ -287,4 +287,18 @@ Por que me odeia?</p>
         }
         vibrateDevice(); // Chama a função de vibração quando o botão for clicado
     }
+
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+      e.preventDefault();
+    }
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+      e.preventDefault();
+    }
+  });
 </script>
