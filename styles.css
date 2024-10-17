@@ -464,4 +464,15 @@ body {
     opacity: 1; /* Totalmente visível */
     transform: translateY(0); /* Retorna à posição original */
 }
+/*evitar que copiem*/
+body {
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+img, body {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
 }
